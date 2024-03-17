@@ -1,0 +1,106 @@
+ /* CSS Styles */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav{
+    height: 150px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .logo{
+    height: 150px;
+  }
+  body {
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(to bottom, #f8b5f3, #00f2fe);
+    margin: 0;
+    padding: 0;
+  }
+  .header{
+    height: 100px;
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .tagline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  .tagline div{
+    
+    font-size: 30px;
+   
+  }
+  .container {
+    
+    max-width: 600px;
+    margin: 30px 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .upload-container {
+    margin-bottom: 20px;
+  }
+  .upload-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .upload-btn:hover {
+    background-color: #45a049;
+  }
+  #resumeUpload {
+    display: none;
+  }
+  #fileName {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+.madhav{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.madhav p{
+    margin: 10px 0px;
+}
+

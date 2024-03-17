@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortlisted Companies</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;500;600;700;900&display=swap');
+    /* CSS Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Martel Sans', sans-serif;
+      background: linear-gradient(to right, #00b4db, #0083b0, #00b4db); /* Blue to white gradient */
+      animation: changeColor 5s infinite alternate; /* Color animation for the background */
+    }
+
+    @keyframes changeColor {
+      0% {
+        background-color: #00b4db;
+      }
+      50% {
+        background-color: #9bb8cd; /* Intermediate color */
+      }
+      100% {
+        background-color: #f0f0f0; /* White */
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333; /* Text color */
+      animation: textAnimation 5s infinite alternate; /* Color animation for the header */
+    }
+
+    @keyframes textAnimation {
+      0% {
+        color: #333; /* Initial color */
+      }
+      50% {
+        color: #eff1f2; /* Intermediate color */
+      }
+      100% {
+        color: #121212; /* Final color */
+      }
+    }
+
+    .company-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .company-list li {
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      overflow: hidden; /* Ensures images don't overflow */
+      position: relative;
+    }
+
+    .company-list li img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .company-list li:hover img {
+      transform: scale(1.03); /* Scale up image on hover */
+    }
+
+    .company-list li h2 {
+      margin-bottom: 10px;
+    }
+
+    .company-list li p {
+      margin-bottom: 15px;
+    }
+
+    .details-btn {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #007bff;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .details-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YOUR SHORTLISTED COMPANIES ARE</h1>
+    <ul class="company-list">
+      <li>
+        <img src="https://images.moneycontrol.com/static-mcnews/2023/07/TCS-LOGO.png?impolicy=website&width=1600&height=900" alt="TCS">
+        <h2>Tata Consultancy Services (TCS)</h2>
+        <p>Tata Consultancy Services Limited is an Indian multinational information technology services and consulting company headquartered in Mumbai, Maharashtra, India. It operates in 149 locations across 46 countries.</p>
+        <button class="details-btn">Click for Details</button>
+      </li>
+      <li>
+        <img src="https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/256_144_1.png?$512_N_PNG$" alt="Samsung">
+        <h2>Samsung</h2>
+        <p>Samsung is a South Korean multinational conglomerate headquartered in Seoul. It comprises numerous affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol.</p>
+        <button class="details-btn">Click for Details</button>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="Infosys">
+        <h2>Infosys</h2>
+        <p>Infosys Limited is an Indian multinational corporation that provides business consulting, information technology, and outsourcing services. It has its headquarters in Bengaluru, Karnataka, India.</p>
+        <button class="details-btn">Click for Details</button>
+      </li>
+      <li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNeolYIJgiNS0Vi7CiNSQDR6gZypG6bNJZcDpTXYjjQvdYbhjf57HaAR9Z7za8lTZLOWM&usqp=CAU" alt="Accenture">
+        <h2>Accenture</h2>
+        <p>Accenture plc is an Irish multinational professional services company. A Fortune Global 500 company, it reported revenues of $44.33 billion in 2020 and had 537,000 employees.</p>
+        <button class="details-btn">Click for Details</button>
+      </li>
+      <li>
+        <img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/05/05/Photos/Processed/wiprologo-kXmF--621x414@LiveMint.jpg" alt="Wipro">
+        <h2>Wipro</h2>
+        <p>Wipro Limited is an Indian multinational corporation that provides information technology, consulting, and business process services. It is headquartered in Bangalore, Karnataka, India.</p>
+        <button class="details-btn">Click for Details</button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

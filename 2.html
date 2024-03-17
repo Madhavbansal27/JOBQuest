@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* Inline CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #9bb8cd;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .about-section {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin-bottom: 20px;
+      animation: gradientAnimation 5s infinite alternate;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-color: #fff;
+      }
+      50% {
+        background-color: #f0f0f0;
+      }
+      100% {
+        background-color: #fff;
+      }
+    }
+
+    .about-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .about-content {
+      text-align: justify;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .about-content p {
+      margin-bottom: 20px;
+    }
+
+    .about-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-content a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .about-content a:hover {
+      color: #0056b3;
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-up {
+      animation: fadeInUp 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="about-section fade-up">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <p>Welcome to JobFinder, your go-to platform for finding your dream job!</p>
+        <p>At JobFinder, we strive to connect job seekers with their ideal employers. Our user-friendly interface and comprehensive job listings make job hunting easier and more efficient.</p>
+        <p>Whether you're a recent graduate, a seasoned professional, or someone looking for a career change, JobFinder has something for everyone. Browse through thousands of job opportunities and take the next step towards your career goals.</p>
+        <p>Explore our website to discover job openings, resources, and valuable insights to help you succeed in your job search journey.</p>
+        <p>Feel free to <a href="#">contact us</a> if you have any questions or feedback. We're here to support you every step of the way!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

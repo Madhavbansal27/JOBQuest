@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+  height: 150px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav img{
+    height: 150px;
+}
+/* Global styles */
+body {
+    font-family: 'Martel Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7D4;
+}
+
+.feature p {
+    margin: 20px 0px;
+}
+
+/* Header styles */
+header {
+    background-color: #63794f;  
+    padding: 20px 0;
+    
+}
+
+
+/* Hero section styles */
+.hero {
+    background-color: #9BB8CD;
+    padding: 100px 0;
+    text-align: center;
+    font-size: 26px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Features section styles */
+.features {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.feature {
+    margin-top: 50px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials section styles */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.testimonial {
+    margin-top: 50px;
+}
+
+.testimonial p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.testimonial cite {
+    font-style: normal;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1rem;
+}
+.container h1{
+    font-size: 4rem;
+}
+.hero p{
+    margin: 20px;
+}
+.features img{
+    width: 500px;
+    margin: 20px 0px;
+    border: 0.5px solid black;
+}

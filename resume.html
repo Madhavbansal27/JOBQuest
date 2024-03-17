@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Resume</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <div class="nav">
+    <img class="logo" src="WhatsApp Image 2024-03-16 at 16.16.36.jpeg" alt="">
+  </div>
+  <div class="header">
+    <div class="tagline">
+      <div>Ready to Unlock Endless Career Opportunities?</div>
+      <div>Simplify your job search by uploading your resume to JobQUEST!</div>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Upload Your Resume</h1>
+    <div class="upload-container">
+      <form id="resumeForm" action="shortlist.html" method="post">
+        <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx" name="resume">
+        <label for="resumeUpload" class="upload-btn">Choose File</label>
+        <span id="fileName">No file chosen</span>
+        <a href="shortlist.html"><button type="submit" class="submit-btn">Submit</button></a>
+      </form>
+    </div>
+  </div>
+  <div class="madhav">
+    
+    <h2>How To Make A Resume</h2>
+    <p>Utilize the video to learn how to make a resume</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y3R9e2L8I9E?si=vBqowJzrqL-L7eMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+
+
+  <script>
+    // JavaScript Code
+    document.addEventListener("DOMContentLoaded", function() {
+      const fileInput = document.getElementById('resumeUpload');
+      const fileNameDisplay = document.getElementById('fileName');
+      const resumeForm = document.getElementById('resumeForm');
+
+      fileInput.addEventListener('change', function() {
+        const fileName = this.files[0].name;
+        fileNameDisplay.textContent = fileName;
+      });
+
+      resumeForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        window.location.href = 'shortlist.html';
+      });
+    });
+  </script>
+</body>
+</html>
